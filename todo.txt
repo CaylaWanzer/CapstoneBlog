@@ -1,0 +1,32 @@
+// TODO
+FILES
+    home page
+    CSS
+    JavaScript
+PAGES
+    HOME 
+        - App name and description 
+        - Login
+        - Registration 
+    Posts/Messages
+        - reject users who are not authorized - redirect to home/Login
+        - display all messages from all users 
+        - include 
+            - content
+            - authorized 
+            - timestamp
+    User Profile and create Post Page
+        - enforce authorization and redirect like we did for the Posts
+        - logout button
+        - new message from
+        - link back to posts/messages page 
+
+OPTIONAL BONUS EXTRA CREDIT 
+    - Like button on every message 
+        - shows if we have liked it or not and count the likes
+    - delete post but only if user is the authorization
+    - sort by
+        - by like count(popularity)
+        - by author name
+
+http://microbloglite.us-east-2.elasticbeanstalk.com/docs/
