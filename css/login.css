@@ -16,3 +16,19 @@ body, html {
     background-repeat: no-repeat; /* Prevents tiling */
     z-index: -1; /* Sends it behind other elements */
   }
+
+  #test{
+    margin: auto;
+    background-color: rgba(12, 12, 12, 0.87);
+    color: rgb(247, 188, 62);
+    width: 1000px;
+    border-radius: 1rem;
+    padding: 50px;
+  }
+
+  button{
+    border-radius: .3rem;
+    background-color: rgb(179, 113, 14);
+    color: white;
+  }
+   
