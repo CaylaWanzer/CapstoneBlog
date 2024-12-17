@@ -17,14 +17,14 @@ body, html {
     z-index: -1; /* Sends it behind other elements */
   }
 
-  #test{
+  /* #test{
     margin: auto;
     background-color: rgba(12, 12, 12, 0.87);
     color: rgb(247, 188, 62);
     width: 1000px;
     border-radius: 1rem;
     padding: 50px;
-  }
+  } */
 
   button{
     border-radius: .3rem;
@@ -32,3 +32,12 @@ body, html {
     color: white;
   }
    
+  main {
+    margin: auto;
+    background-color: rgba(10, 10, 10, 0.541);
+    text-align: center;
+    width: 400px;
+    border-radius: .5rem;
+    padding: 50px;
+    
+  }
