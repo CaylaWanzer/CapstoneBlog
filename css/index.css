@@ -1,9 +1,5 @@
-.icon {   /*this class is for the buttons on line 34 & 35*/
-    width: 25px;   /* this adjust the size of the icon*/
-    padding-right: 8px; /*this moves it away from the words*/
-}
 
-button a {
-    text-decoration: none; /* removes the underline in the button */
-    color: black;
-}
+
+  /* #lol {
+    background-color: rgb(252, 252, 149);
+  } */

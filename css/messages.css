@@ -1,0 +1,18 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .background {
+    position: fixed; /* Ensures it stays fixed while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-image: url('https://as1.ftcdn.net/v2/jpg/03/41/89/96/1000_F_341899604_AwIztUlww5CBcolaIhN4HmjvBaEcNthO.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    z-index: -1; /* Sends it behind other elements */
+  }

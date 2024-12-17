@@ -1,4 +1,5 @@
 const BASE_URL = "http://microbloglite.us-east-2.elasticbeanstalk.com";
+
 const NO_AUTH_HEADERS = { 'accept': 'application/json', 'Content-Type': 'application/json' };
 // ONLY 2 - INSECURE TOKEN FREE ACTIONS
 
@@ -66,17 +67,35 @@ async function login(username, password) {
 }
 
 // ALL THE OTHERS NEED A TOKEN IN THE HEADER
-
-
-// get secure list of message using token
-async function getMessageList(){
-    return {
-        Authorization:`Bearer ${loginData.token}`,
+function headersWithAuth() {
+    //SAME AS NO AUTH BUT WITH AUTH ADDED
+    return { 
+        ...NO_AUTH_HEADERS, 
+        'Authorization': `Bearer ${localStorage.token}`,
     }
 }
-// r = await fetch(url, {
-//     method: "GET",
-//     headers: {
-//         Authorization: `Bearer ${loginData.token}`,
-//     },
-// })
+// get secure list of message using token
+async function getMessageList() {
+    const LIMIT_PER_PAGE = 1000;
+    const OFFSET_PAGE = 0;
+    const queryString = `?limit=${LIMIT_PER_PAGE}&offset=${OFFSET_PAGE}`;
+
+    const response = await fetch(
+        BASE_URL + "/api/posts" + queryString, {
+        method: "GET",
+        headers: headersWithAuth(),
+    });
+    const object = await response.json();
+    return object;
+}
+
+async function sendText(text){
+    const response = await fetch(
+        BASE_URL + "/api/posts", { // endpoint for messages/posts
+        method: "POST", //CREATE
+        headers: headersWithAuth(),
+        body: `{"text":"${text}"}` //make json string by hand instead of stringify
+    });
+    const object = await response.json();
+    return object;
+}

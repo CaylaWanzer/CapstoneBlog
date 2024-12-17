@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
             username.value,
             password.value
         );
-        debugger;
         if(!result || !result.hasOwnProperty("statusCode") || result.statusCode != 200){
             output.innerText = "Login Failed";
             return;

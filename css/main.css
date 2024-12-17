@@ -1,3 +1,14 @@
 body{
-    background-color: bisque; /*changes the background color*/
+    background-color: rgb(252, 252, 149); /*changes the background color*/
+}
+
+.icon {   /*this class is for the buttons on line 34 & 35*/
+    width: 25px;   /* this adjust the size of the icon*/
+    padding-right: 8px; /*this moves it away from the words*/
+    padding-bottom: 3px;
+}
+
+button a {
+    text-decoration: none; /* removes the underline in the button */
+    color: black;
 }
