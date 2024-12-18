@@ -21,6 +21,7 @@ function getMessage(m) {
             WHEN:  ${m.createdAt}<br>\n    
             TEXT:  ${m.text}<br>\n
             LIKES: ${m.likes.length}
+            <button class="likeBtn" data-post_id="${m._id}">LIKE</button>
         </div>
     `;
 }
@@ -28,5 +29,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const messages = await getMessageList();
     output.innerHTML = messages.map(getMessage).join("<hr>\n")
-
+    const likeBtn = document.querySelectorAll(".likeBtn")
+    likeBtn.forEach(button => {
+      button.addEventListener("click", async (e)=> {
+        const postId = e.target.dataset.post_id
+        await toggleLikeBtn(postId)
+        window.location.reload()
+      })
+    })
 });//end load

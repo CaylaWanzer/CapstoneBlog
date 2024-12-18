@@ -99,3 +99,27 @@ async function sendText(text){
     const object = await response.json();
     return object;
 }
+async function toggleLikeBtn(postId){
+    const messages = await getMessageList();
+    const post = messages.find(p => p._id === postId);
+    const userLike = post.likes.find(like => like.username === localStorage.username);
+    let response;
+    if(userLike){
+        const likeId = userLike._id
+        response = await fetch(BASE_URL + `/api/likes/${likeId}`, {
+            method: "DELETE",
+            headers: headersWithAuth()
+        })
+    }else{
+        const payload = JSON.stringify({postId})
+        response = await fetch(BASE_URL + `/api/likes`, {
+            method: "POST",
+            headers: headersWithAuth(),
+            body: payload
+        })
+    }
+    if(response.status === 200 || response.status === 201){
+        const updatedMessages = await getMessageList()
+        output.innerHTML = updatedMessages.map(getMessage).join("<hr>")
+    }
+}

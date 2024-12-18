@@ -25,6 +25,7 @@ body, html {
     border-radius: 1rem;
     padding: 50px;
   } */
+   
 
   button{
     border-radius: .3rem;
@@ -41,3 +42,17 @@ body, html {
     padding: 50px;
     
   }
+  main p{
+    color: black;
+  }
+  main p a{
+    text-decoration: none;
+    color: black;
+  }
+  main p a:hover{
+    color: white;
+  }
+  #signUpButton{
+    text-align: center;
+  }
+  
