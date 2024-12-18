@@ -22,5 +22,20 @@ body, html {
     background-color: rgb(179, 113, 14);
     color: white;
   }
+
+  main{
+    margin: auto;
+    padding: 40px;
+    border-radius: .5rem;
+    background-color: rgba(12, 12, 12, 0);
+    color: white;
+    width: 600px;
+    
+  }
+.message{
+  background-color: rgba(10, 8, 3, 0.89);
+  border-radius: .5rem;
+  padding: 30px;
+}
   
  

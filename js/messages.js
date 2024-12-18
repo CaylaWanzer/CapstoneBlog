@@ -17,10 +17,11 @@
 function getMessage(m) {
     return `
         <div data-post_id="${m._id}" class="message">
-            FROM:  ${m.username}<br>\n    
-            WHEN:  ${m.createdAt}<br>\n    
-            TEXT:  ${m.text}<br>\n
-            LIKES: ${m.likes.length}
+            From:  <b>${m.username}<br>\n</b>    
+            WHEN:  <b>${m.createdAt}<br>\n</b>    
+            TEXT:  <b>${m.text}<br>\n</b><br>
+            LIKES: <b>${m.likes.length}</b>
+            
             <button class="likeBtn" data-post_id="${m._id}">LIKE</button>
         </div>
     `;
