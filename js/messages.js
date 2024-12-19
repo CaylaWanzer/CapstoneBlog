@@ -38,4 +38,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         window.location.reload()
       })
     })
+    const logOutButton = document.getElementById("logout");
+    logOutButton.addEventListener("click", async () => {
+        localStorage.removeItem("token");
+        localStorage.removeItem("username");
+        alert("You have been logged out.");
+        window.location.href = "login.html";
+    });
 });//end load

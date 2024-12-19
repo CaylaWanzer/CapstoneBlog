@@ -3,6 +3,9 @@ body, html {
     padding: 0;
     height: 100%;
   }
+  main{
+    padding-top: 100px;
+  }
   
   .background {
     position: fixed; /* Ensures it stays fixed while scrolling */
@@ -11,7 +14,7 @@ body, html {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     background-image: url('https://cdn.pixabay.com/photo/2022/02/28/08/05/honeycomb-7038700_960_720.jpg'); /* Replace with your image path */
-    background-size: cover; /* Ensures the image covers the entire background */
+    background-size: cover; /* makes the image covers the entire background */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents tiling */
     z-index: -1; /* Sends it behind other elements */
@@ -23,7 +26,8 @@ body, html {
       text-align: center;
       width: 400px;
       border-radius: .5rem;
-      padding: 50px;
+      padding: 15px;
+      padding-top: 50px;
       
     }
   main input{
@@ -51,3 +55,6 @@ body, html {
   #suBtn {
     text-align: center;
   }
+  /* .signupInput{
+    padding-top: 100px;
+  } */

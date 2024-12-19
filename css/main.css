@@ -1,6 +1,9 @@
 body{
     background-color: rgb(252, 252, 149); /*changes the background color*/
-}
+    padding-bottom: 12rem;
+
+
+  }
 
 
 
@@ -14,4 +17,60 @@ button a {
     text-decoration: none; /* removes the underline in the button */
     color: white;
 }
+.links{
+    background-color: white;
+    
+    
+  }
+  .links li a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
 
+  }
+  .links li a:hover{
+    color: rgb(233, 157, 16);
+  }
+  footer{
+    text-align: center;
+  }
+  footer li{
+    display: inline-block;
+    margin: 0 1rem;
+  }
+  footer .links ul {
+    list-style-type: none; /* Removes the bullet points */
+    padding: 0; /* Optional: Removes left padding */
+    margin: 0; /* Optional: Removes default margin */
+  }
+  footer {
+   
+    position:fixed;
+    bottom: 0; /* Positions the footer at the bottom */
+    width: 100%; /* Ensures the footer spans the full width of the page */
+  }
+
+
+  
+.btn {
+    display: inline-flex; /* Align image and text horizontally */
+    align-items: center; /* Vertically center content */
+    padding: 10px 15px; /* Add padding for button-like appearance */
+    background-color: #f7d259; /* Background color */
+    color: #000; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    cursor: pointer; /* Pointer cursor for button-like feel */
+}
+
+.btn:hover {
+    background-color: #f4c842; /* Slightly darker background on hover */
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px; /* Space between the icon and text */
+}

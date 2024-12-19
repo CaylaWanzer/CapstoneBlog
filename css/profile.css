@@ -4,34 +4,46 @@ button{
     color: white;
   }
 
- 
+/*  
     #userUpdate {
       margin: auto;
       display: flex;
-      flex-direction: column; /* Stack items vertically */
-      align-items: center; /* Center align the items */
-      background-color: #f8f4f4be; /* Background for the form */
+      flex-direction: column; 
+      align-items: center; 
+      background-color: #f8f4f4be; 
       padding: 20px;
-      border-radius: 10px; /* Rounded corners */
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
-      width: 300px; /* Set a fixed width for consistency */
+      border-radius: 10px; 
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+      width: 300px; 
   }
   label {
     display: flex;
-    flex-direction: column; /* Stack label text and input vertically */
+    flex-direction: column; 
     margin-bottom: 15px;
-    width: 100%; /* Take the full width */
+    width: 100%; 
 }
 input, textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 100%; /* Full width for inputs */
+  width: 100%; 
   box-sizing: border-box;
 }
 button {
   cursor: pointer;
   text-align: center;
   display: flex;
-  align-items: center; /* Center content inside the button */
+  align-items: center; 
+} */
+
+
+
+#userUpdate{
+  margin: auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.781);
+  color: white;
+  width: 600px;
+  border-radius: .5rem;
 }
+

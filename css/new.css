@@ -1,0 +1,15 @@
+button{
+    border-radius: .3rem;
+    background-color: rgb(179, 113, 14);
+    color: white;
+  }
+main{
+    text-align: center;
+    margin: auto;
+    /* margin-bottom: 200px; */
+    background-color: rgba(0, 0, 0, 0.726);
+    color: white;
+    width: 600px;
+    border-radius: .5rem;
+    padding: 30px;
+}
