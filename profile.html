@@ -8,6 +8,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/profile.css">
+    <script src="./js/main.js"></script>
+    <script src="./js/profile.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -30,8 +32,27 @@
         </div>
       </nav>
     <h1>Profile Page</h1>
-    <button><img src="./img/bee-busy-insect-industrious-svgrepo-com.svg" class="icon"><a href="index.html">Home</a></button>
-    <button><img src="./img/bee-busy-insect-industrious-svgrepo-com.svg" class="icon"><a href="messages.html">BuzzBoardd</a></button>
-    
+    <header>
+      <h1>Edit User Profile - <span id="username">?</span></h1>
+  </header>
+  <main id="userUpdate">
+      <label for="fullName">
+          <span>Full Name:</span>
+          <input type="text" id="fullName">
+      </label><br>
+      <label for="bioText">
+          <span>Biography:</span>
+          <textarea id="bioText"></textarea>
+      </label><br>
+      <label for="passwordInput">
+          <span>Password:</span>
+          <input type="password" id="passwordInput">
+      </label><br>
+      <button id="saveUserProfile">Save User Profile</button>
+      <br><br>
+      <button><img src="./img/bee-busy-insect-industrious-svgrepo-com.svg" class="icon"><a href="index.html">Home</a></button><br>
+      <button><img src="./img/bee-busy-insect-industrious-svgrepo-com.svg" class="icon"><a href="messages.html">BuzzBoardd</a></button><br>
+      <button id="logout"><img src="./img/bee-busy-insect-industrious-svgrepo-com.svg" class="icon">Log-Out</button>
+    </main>
 </body>
 </html>

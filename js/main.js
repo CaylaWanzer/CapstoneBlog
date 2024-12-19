@@ -123,3 +123,25 @@ async function toggleLikeBtn(postId){
         output.innerHTML = updatedMessages.map(getMessage).join("<hr>")
     }
 }
+
+async function getProfile() {
+    const response = await fetch(
+        BASE_URL + "/api/users/" + localStorage.username, {
+        method: "GET",
+        headers: headersWithAuth(),
+    });
+    const object = await response.json();
+    return object;
+}
+
+
+async function saveProfile(payload){
+    const response = await fetch(
+        BASE_URL + "/api/users/" + localStorage.username, { // endpoint for messages/posts
+        method: "PUT", //UPDATE
+        headers: headersWithAuth(),
+        body: JSON.stringify(payload)
+    });
+    const object = await response.json();
+    return object;
+}
