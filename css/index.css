@@ -4,13 +4,14 @@ button{
   
 }
 #beeHome{
-  
   text-align: center;
   align-items: center;
 }
 #beeHome img{
   width: 612px;
-  height: 328px;  
+  height: 328px; 
+  border-radius: .5rem;
+
 }
 
 h1{

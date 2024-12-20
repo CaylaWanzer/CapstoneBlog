@@ -38,4 +38,38 @@ body, html {
   padding: 30px;
 }
   
- 
+#logout{
+  display: inline-flex; /* Align image and text horizontally */
+    
+    padding: 10px 15px; /* Add padding for button-like appearance */
+    background-color: #f7d259; /* Background color */
+    color: #000; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    
+}
+#logout:hover{
+  color: white;
+}
+.btn{
+  display: inline-flex; /* Align image and text horizontally */
+    
+    padding: 10px 15px; /* Add padding for button-like appearance */
+    background-color: #f7d259; /* Background color */
+    color: #000; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    
+}
+.btn:hover{
+  color: white;
+}
+
+
+h1{
+  text-align: center;
+}

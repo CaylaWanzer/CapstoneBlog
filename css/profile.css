@@ -4,40 +4,9 @@ button{
     color: white;
   }
 
-/*  
-    #userUpdate {
-      margin: auto;
-      display: flex;
-      flex-direction: column; 
-      align-items: center; 
-      background-color: #f8f4f4be; 
-      padding: 20px;
-      border-radius: 10px; 
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
-      width: 300px; 
-  }
-  label {
-    display: flex;
-    flex-direction: column; 
-    margin-bottom: 15px;
-    width: 100%; 
-}
-input, textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 100%; 
-  box-sizing: border-box;
-}
-button {
-  cursor: pointer;
+h1{
   text-align: center;
-  display: flex;
-  align-items: center; 
-} */
-
-
-
+}
 #userUpdate{
   margin: auto;
   text-align: center;
@@ -45,5 +14,32 @@ button {
   color: white;
   width: 600px;
   border-radius: .5rem;
+}
+
+#saveUserProfile{
+  display: inline-flex; /* Align image and text horizontally */
+  align-items: center; /* Vertically center content */
+  padding: 10px 15px; /* Add padding for button-like appearance */
+  background-color: #f7d259; /* Background color */
+  color: #000; /* Text color */
+  text-decoration: none; /* Remove underline */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px;
+  cursor: pointer; /* Pointer cursor for button-like feel */
+}
+
+#logout{
+  display: inline-flex; /* Align image and text horizontally */
+  align-items: center; /* Vertically center content */
+  padding: 10px 15px; /* Add padding for button-like appearance */
+  background-color: #f7d259; /* Background color */
+  color: #000; /* Text color */
+  text-decoration: none; /* Remove underline */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px;
+  cursor: pointer; /* Pointer cursor for button-like feel */
+  
 }
 
